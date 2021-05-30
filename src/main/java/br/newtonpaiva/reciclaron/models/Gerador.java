@@ -1,8 +1,5 @@
 package br.newtonpaiva.reciclaron.models;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * 
  * @author kevin
@@ -11,20 +8,8 @@ import java.util.List;
 public class Gerador extends Usuario {
 
 	@Override
-	public void cadastrarUsuario() {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public boolean validarNumeroDocumento() {
+	public boolean isNumeroDocumentoValido() {
 		// TODO Auto-generated method stub
 		return false;
-	}
-
-	@Override
-	public List<Usuario> listarUsuarios() {
-		// TODO Auto-generated method stub
-		return new ArrayList<>();
 	}
 }
