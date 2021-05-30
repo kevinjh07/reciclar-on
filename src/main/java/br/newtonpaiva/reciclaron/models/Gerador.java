@@ -9,7 +9,7 @@ public class Gerador extends Usuario {
 
 	@Override
 	public boolean isNumeroDocumentoValido() {
-		// TODO Auto-generated method stub
-		return false;
+		int quantidadeCaracteresCpf = 11;
+		return super.getNumeroDocumento() != null && super.getNumeroDocumento().length() == quantidadeCaracteresCpf;
 	}
 }

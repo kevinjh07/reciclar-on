@@ -5,7 +5,6 @@ package br.newtonpaiva.reciclaron.models;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
 
 import org.junit.Test;
 
@@ -190,7 +189,7 @@ public class UsuarioTest {
 		empresa.setEnderecoUsuario(null);
 		assertFalse(empresa.isEnderecoValido());
 	}
-	
+
 	/**
 	 * Test method for
 	 * {@link br.newtonpaiva.reciclaron.models.Usuario#isEnderecoValido()}.

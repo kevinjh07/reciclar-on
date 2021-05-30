@@ -12,8 +12,8 @@ public class Empresa extends Usuario {
 
 	@Override
 	public boolean isNumeroDocumentoValido() {
-		// TODO Auto-generated method stub
-		return false;
+		int quantidadeCaracteresCnpj = 14;
+		return super.getNumeroDocumento() != null && super.getNumeroDocumento().length() == quantidadeCaracteresCnpj;
 	}
 
 	/**

@@ -111,4 +111,15 @@ public abstract class Usuario {
 	 * @return Retorna true se o CPF/CNPJ for válido
 	 */
 	public abstract boolean isNumeroDocumentoValido();
+
+	@Override
+	public String toString() {
+		return "Usuario{" +
+				"nomeUsuario='" + nomeUsuario + '\'' +
+				", enderecoUsuario='" + enderecoUsuario + '\'' +
+				", telefoneUsuario='" + telefoneUsuario + '\'' +
+				", emailUsuario='" + emailUsuario + '\'' +
+				", numeroDocumento='" + numeroDocumento + '\'' +
+				'}';
+	}
 }

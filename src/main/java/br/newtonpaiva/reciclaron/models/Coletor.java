@@ -12,20 +12,23 @@ public class Coletor extends Usuario {
 
 	@Override
 	public boolean isNumeroDocumentoValido() {
-		// TODO Auto-generated method stub
-		return false;
+		int quantidadeCaracteresCpf = 11;
+		return super.getNumeroDocumento() != null && super.getNumeroDocumento().length() == quantidadeCaracteresCpf;
 	}
 
 	/**
 	 * Agenda entrega
+	 * 
 	 * @return Retorna agendamento da entrega
 	 */
 	public AgendamentoEntrega agendarEntrega() {
-		return null;
+		AgendamentoEntrega agendamento = new AgendamentoEntrega(this.getNumeroDocumento());
+		return agendamento;
 	}
 
 	/**
 	 * Lista empresas cadastradas
+	 * 
 	 * @return Retorna empresas cadastradas
 	 */
 	public List<Usuario> listarEmpresasCadastradas() {

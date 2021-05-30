@@ -10,14 +10,15 @@ import java.util.List;
  *
  */
 public class AgendamentoEntrega {
-	private String numeroDocumento;
+	
+	private final String numeroDocumento;
+
+	public AgendamentoEntrega(String numeroDocumento) {
+		this.numeroDocumento = numeroDocumento;
+	}
 
 	public String getNumeroDocumento() {
 		return numeroDocumento;
-	}
-
-	public void setNumeroDocumento(String numeroDocumento) {
-		this.numeroDocumento = numeroDocumento;
 	}
 	
 	/**
@@ -26,5 +27,12 @@ public class AgendamentoEntrega {
 	 */
 	public List<LocalDate> verificarDiasDisponiveis() {
 		return new ArrayList<>();
+	}
+
+	@Override
+	public String toString() {
+		return "AgendamentoEntrega{" +
+				"numeroDocumento='" + numeroDocumento + '\'' +
+				'}';
 	}
 }

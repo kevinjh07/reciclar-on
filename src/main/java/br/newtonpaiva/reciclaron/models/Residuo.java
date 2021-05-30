@@ -45,10 +45,13 @@ public class Residuo {
 		this.ativoResiduo = ativoResiduo;
 	}
 
-	/**
-	 * Cadastra resíduo
-	 */
-	public void cadastrarResiduo() {
-		throw new UnsupportedOperationException();
+	@Override
+	public String toString() {
+		return "Residuo{" +
+				"tipoResiduo=" + tipoResiduo +
+				", quantidadeResiduo=" + quantidadeResiduo +
+				", valorResiduo=" + valorResiduo +
+				", ativoResiduo=" + ativoResiduo +
+				'}';
 	}
 }
